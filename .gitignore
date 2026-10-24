@@ -1,0 +1,34 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建产物
+dist/
+.next/
+out/
+build/
+.turbo/
+*.tsbuildinfo
+.workbuddy-ai
+
+# 测试
+coverage/
+*.lcov
+
+# 环境变量（保留示例文件）
+.env
+.env.*
+!.env.example
+
+# 日志
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+
+# 框架自动生成
+next-env.d.ts

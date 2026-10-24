@@ -1,0 +1,12 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+# 全仓统一版本：子包统一写 "catalog:"，避免同一依赖装出多份
+catalog:
+  typescript: ^6.0.3
+  '@types/node': ^24.19.2
+  prettier: ^3.4.2
+
+allowBuilds:
+  unrs-resolver: true

@@ -1,0 +1,22 @@
+{
+  "name": "iword",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=22.18.0",
+    "pnpm": ">=12.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" run dev",
+    "build": "pnpm --filter \"./apps/*\" run build",
+    "lint": "pnpm -r --no-bail run lint",
+    "test": "pnpm -r --no-bail run test",
+    "typecheck": "pnpm -r --no-bail run typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "catalog:"
+  }
+}
